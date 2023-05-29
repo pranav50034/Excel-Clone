@@ -1,0 +1,66 @@
+html,
+body {
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   width: 100vw;
+}
+
+table {
+   border-collapse: collapse;
+   width: auto;
+}
+
+.table-div {
+   overflow: scroll;
+   /* overflow-x: scroll;
+   overflow-y: scroll; */
+}
+
+th,
+td {
+   border: 1px solid #333;
+   min-width: 80px;
+}
+
+td:focus {
+   outline: none;
+}
+
+/* Functionality */
+.functions-div {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   /* position: fixed; */
+}
+
+.heading {
+   background-color: #207346;
+   color: #fff;
+   padding: 0.8em;
+}
+
+.function {
+   background-color: #fff;
+   display: flex;
+   padding: 1em;
+   align-items: center;
+}
+
+.function div,
+.function button {
+   margin-right: 1em;
+}
+
+.heading {
+   display: flex;
+   gap: 0.5em;
+}

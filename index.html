@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Excel Clone</title>
+      <link rel="stylesheet" href="./style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+   </head>
+   <body>
+      <div class="functions-div">
+         <div class="heading">
+            <h1>Current Cell:</h1>
+            <h1 class="cellId"></h1>
+         </div>
+         <div class="function">
+            <button class="cut">
+               <i
+                  class="fa-regular fa-solid fa-scissors"
+                  style="color: #207346"
+               ></i>
+            </button>
+            <button class="copy">
+               <i class="fa-regular fa-copy" style="color: #207346"></i>
+            </button>
+            <button class="paste">
+               <i class="fa-regular fa-paste" style="color: #207346"></i>
+            </button>
+            <div class="ff">
+               <select id="font-family" style="width: 200px">
+                  <option value="serif" style="font-family: serif">
+                     Serif
+                  </option>
+                  <option value="sans-serif" style="font-family: sans-serif">
+                     Sans-Serif
+                  </option>
+                  <option value="cursive" style="font-family: cursive">
+                     Cursive
+                  </option>
+                  <option value="monospace" style="font-family: monospace">
+                     monospace
+                  </option>
+               </select>
+            </div>
+            <div class="fs">
+               <select id="font-size">
+                  <option value="14px">14</option>
+                  <option value="16px">16</option>
+                  <option value="18px">18</option>
+                  <option value="20px">20</option>
+               </select>
+            </div>
+            <button class="bold">
+               <i class="fa fa-bold" style="color: #207346"></i>
+            </button>
+            <button class="italics">
+               <i class="fa fa-italic" style="color: #207346"></i>
+            </button>
+            <button class="underline">
+               <i class="fa-solid fa-underline" style="color: #207346"></i>
+            </button>
+            <button class="left-align">
+               <i class="fa-solid fa-align-left" style="color: #207346"></i>
+            </button>
+            <button class="center-align">
+               <i class="fa-solid fa-align-center" style="color: #207346"></i>
+            </button>
+            <button class="right-align">
+               <i class="fa-solid fa-align-right" style="color: #207346"></i>
+            </button>
+         </div>
+      </div>
+
+      <div class="table-div">
+         <table class="my-table">
+            <thead>
+               <tr class="table-heading-row">
+                  <th></th>
+               </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+         </table>
+      </div>
+
+      <script src="./script.js"></script>
+   </body>
+</html>
